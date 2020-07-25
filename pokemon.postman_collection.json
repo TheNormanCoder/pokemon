@@ -1,0 +1,100 @@
+{
+	"variables": [],
+	"info": {
+		"name": "pokemon",
+		"_postman_id": "08142ecf-48c6-8ecc-16a1-929f4b78fa3b",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "getPokemon",
+			"request": {
+				"url": "",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "deletePokemon",
+			"request": {
+				"url": "http://localhost:8080/pokemon-0.0.1-SNAPSHOT/pokemon/charizad",
+				"method": "DELETE",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "putPokemon",
+			"request": {
+				"url": "http://localhost:8080/pokemons",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					},
+					{
+						"key": "Authorization",
+						"value": "Basic YXNoOmFzaA==",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"name\":\"pickachu\",\n\t\"description\":\"Pikachu are small\"\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "updatePokemon",
+			"request": {
+				"url": "http://localhost:8080/pokemon-0.0.1-SNAPSHOT/pokemons",
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					},
+					{
+						"key": "Authorization",
+						"value": "Basic YXNoOmFzaA==",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"name\":\"pickachu\",\n\t\"description\":\"Pikachu are small\"\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "getAllPokemon",
+			"request": {
+				"url": "http://localhost:8080/pokemon",
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Basic YXNoOmFzaA==",
+						"description": ""
+					}
+				],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		}
+	]
+}
